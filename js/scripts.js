@@ -17,7 +17,7 @@ $(document).ready(function() {
     $("#development-image").slideDown().show();
     $("#devinfo").slideUp().hide();
   });
-  
+
   $("#mgt_image").click(function() {
     $("#pinfo").slideDown();
     $("#mgt_image").slideDown().hide();
@@ -32,4 +32,12 @@ $(document).ready(function() {
   }).mouseout(function(){
     $(".text1").hide();
   });
+});
+
+$("#document").ready(function() {
+  $("#dark-b").mouseover(function(){
+  $("#overlay").show();
+}).mouseout(function(){
+  $("#overlay").hide()
+});
 });
